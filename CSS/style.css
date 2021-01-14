@@ -4,6 +4,9 @@
 /* css variables */
 @import url(./partials/variables.css);
 
+/* import global styling */
+@import url(./partials/_global.css);
+
 /*start navigation*/
 
 .header_area .main-menu .navbar .navbar-brand {
@@ -90,3 +93,42 @@
 }
 
 /* End About Area */
+
+/*Start Contact Area*/
+.site-main
+  .contact-area
+  .container-fluid
+  .row
+  .col-lg-6
+  col-md-12
+  contact-title {
+  padding: 10px;
+}
+.site-main
+  .contact-area
+  .container-fluid
+  .row
+  .col-lg-6
+  col-md-12
+  contact-title:hover {
+  box-shadow: var(--box-shadow);
+}
+/*End Comtact Area*/
+
+/* Footer Area */
+
+footer.footer-area .social h5 {
+  font: normal 500 23px/ 30px var(--roboto);
+}
+
+footer.footer-area .social a > i {
+  font-size: 22px;
+  padding: 2rem;
+  color: var(--border-color);
+}
+
+footer.footer-area .social a:hover > i {
+  color: var(--primary-color);
+}
+
+/* End Footer */
