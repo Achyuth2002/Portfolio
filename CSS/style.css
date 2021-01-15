@@ -73,13 +73,14 @@
   padding: 7rem 0;
   width: 90rem;
 }
-
 /* End Banner Area */
 
 /* Start About Area */
 
 .site-main .about-area {
   padding: 8rem 5rem;
+  background: url(../img/bg1.png) no-repeat 0% 50%;
+  background-position: right;
 }
 
 .site-main .about-area .about-title h2 > span {
@@ -94,26 +95,25 @@
 
 /* End About Area */
 
-/*Start Contact Area*/
-.site-main
-  .contact-area
-  .container-fluid
-  .row
-  .col-lg-6
-  col-md-12
-  contact-title {
-  padding: 10px;
+/* Start Contact Area */
+
+.site-main .contact-area {
+  padding: 8rem 5rem;
+  background: url(../img/bg.png) no-repeat 0% 50%;
+  background-position: left;
 }
-.site-main
-  .contact-area
-  .container-fluid
-  .row
-  .col-lg-6
-  col-md-12
-  contact-title:hover {
-  box-shadow: var(--box-shadow);
+
+.site-main .contact-area .contact-title h2 > span {
+  display: block;
+  font: normal bold 49px/ 60px var(--roboto);
+  letter-spacing: 10px;
 }
-/*End Comtact Area*/
+
+.site-main .contact-area .contact-title .paragraph > p {
+  padding: 0.4rem 0;
+}
+
+/* End Contact Area */
 
 /* Footer Area */
 
