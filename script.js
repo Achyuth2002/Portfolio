@@ -1,7 +1,3 @@
-window.addEventListener('load', function() {
-  document.getElementById('loading-icon').style.display = 'none';
-  document.body.style.display = 'block';
-});
 
 var content = ["Frontend Developer", "Engineering Student"];
 var index = 0;
