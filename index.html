@@ -1,182 +1,411 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Achyuth</title>
-
-    <!--Bootstrap file-->
-    <link rel="stylesheet" href="./CSS/bootstrap.min.css" />
-
-    <!--font awesome icons-->
-    <link rel="stylesheet" href="./CSS/all.min.css" />
-
-    <!--custom css file-->
-    <link rel="stylesheet" href="./CSS/style.css" />
-
-     <!--  Responsive css file  -->
-     <link rel="stylesheet" href="./css/responsive.css">
-
+    <title>Achyuth Anilkumar</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/media.css" />
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
   </head>
 
   <body>
-    <!--====================== Start Header Area======================-->
-    <header class="headerarea">
-      <div class="main-menu">
-        <nav class="navbar navbar-expand-lg navbar-light">
-          <div class="container-fluid">
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
-              aria-controls="navbarNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div
-              class="collapse navbar-collapse"
-              id="navbarNav"
-              style="text-align: center"
-            >
-              <div class="navbar" style="margin-right: auto;"></div>
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#site-main"
-                    >HOME&nbsp;&nbsp;</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#about">ABOUT ME&nbsp;&nbsp;</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#contact">CONTACT</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
+
+    <!-- Navigation Area -->
+
+    <nav id="desktop-nav">
+      <div class="logo">achyuth.</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </div>
-    </header>
+    </nav>
 
-    <!--====================== End Header Area======================-->
+    <nav id="hamburger-nav">
+      <div class="logo">achyuth.</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
 
-    <!--  ======================= Start Main Area ================================ -->
-    <main class="site-main">
-      <!--  ======================= Start Banner Area =======================  -->
-      <section class="site-banner">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6 col-md-12 site-title">
-              <h3 class="title-text">Hey !</h3>
-              <h1 class="title-text text-uppercase">I am Achyuth</h1>
-              <h4 class="title-text text-uppercase">Welcome to my page</h4>
-            </div>
-            <div class="col-lg-4 col-md-6 banner-image">
+    <!-- Profile Area -->
+
+    <section id="profile">
+      <div class="section__pic-container">
+        <img id = "profile-pic" src="./assets/profile-pic.jpeg" alt="Achyuth Anilkumar profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Achyuth Anilkumar</h1>
+        <p class="section__text__p2 typing-animation" id="typing-animation" >Frontend Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Achyuth-Resume.pdf')"
+          >
+           RESUME
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            CONTACT
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/achyuth-anil/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/achyuth-anil'"
+          />
+          <img
+            src="./assets/insta.png"
+            alt="My Insta Profile"
+            class="icon"
+            onclick="location.href='https://www.instagram.com/__.achyuth/'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.jpeg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
               <img
-                src="./img/lotus-pr.jpeg"
-                alt="Smile-img"
-                class="img-fluid"
-                style="border-radius: 50%;"
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
               />
+              <h3>Education</h3>
+              <p>B.Tech Degree - Computer Science <br> 2020 -2024</p>
             </div>
           </div>
-        </div>
-      </section>
-      <!--  ======================= End Banner Area =======================  -->
-
-      <!--  ========================= About Area ==========================  -->
-
-      <section class="about-area" id = "about">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-lg-6 col-md-12">
-              <div class="about-image">
-                <img src="./img/hi.png" alt="About us" class="img-fluid" />
-              </div>
-            </div>
-            <div class="col-lg-6 col-md-12 about-title">
-              <h2 class="text-uppercase pt-5">
-                <span>A B O U T</span>
-              </h2>
-              <div class="paragraph py-4 w-75">
-                <p class="para">
-                  Hey!
-                  I am Achyuth Anilkumar .Presently, pursuing my B.TECH degree from FISAT in Computer Science. 
-                  Learning new things has always been fun ! 
-
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--  ========================= End About Area ==========================  -->
-
-      <!--  =========================  Start Contact Area ==========================  -->
-
-      <section class="contact-area" id = "contact">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-lg-6 col-md-12">
-              <div class="Contact-image">
-                <img src="./img/mail.png" alt="Contact" class="img-fluid" />
-              </div>
-            </div>
-            <div class="col-lg-6 col-md-12 contact-title">
-              <h2 class="text pt-5">
-                <span class="text-uppercase">Contact me</span>
-              </h2>
-              <p class="text-secondary">
-               <h5>
-                <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=GTvVlcRwRdtmLKdttkFhZwXcNSsXCCrHvtkDpQHSBRhvRlvFbcBDtgbjDRnbdmhCKbtWpqZnDvwxJ"><i class="far fa-envelope">:</i></a>
-                <span class="font-roboto py-2"
-                  >anilkumarachyuth3@gmail.com</span
-                >
-               </h5>
+          <div class="text-container">
+            <div class="career-objective">
+              <span>
+                <h3 id="career-obj">&nbsp;Career Objective</h3>
+              </span>
+              <p>
+                To leverage my skills and passion for programming, I am actively seeking an entry-level position where I can learn from experienced professionals and gain valuable knowledge to be a part of innovations that make possible the technology shaping the future.
               </p>
             </div>
-          </div>
-        </div>
-      </section>
-      <!--  ========================= End Contact Area ==========================  -->
-    </main>
-    <!--  ======================= End Main Area ================================ -->
-
-    <footer class="footer-area">
-      <div class="container">
-        <div class="">
-          <div class="site-logo text-center py-4">
-            <a href="#"
-              ><img src="./img/IMG_20211128_082042_750.jpg" width="80px" height="80px" alt="logo" style="border-radius: 50%"
-            /></a>
-          </div>
-          <div class="social text-center">
-            <h5 class="text-uppercase">Follow me</h5>
-            <a href="https://github.com/achyuth-anil"><i class="fab fa-github"></i></a>
-            <a href="https://www.instagram.com/__.achyuth/"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/achyuth-anilkumar-a9aa701aa/"><i class="fab fa-linkedin"></i></a>
-          </div>
-          <div class="copyrights text-center">
-            <p class="para">
-              Copyright ©2021 | All rights reserved
-              <a><span style="color: var(--primary-color)">Achyuth</span></a>
-            </p>
+            <div class="areas-of-int">
+              <h3 id="aoi-title">Areas of Interest</h3>
+              <div class="interests">
+                <div class="interest">
+                  <img id ="aoi" src="./assets/web.png" alt="Interest 1">
+                  <p>Web Development</p>
+                </div>
+                <div class="interest">
+                  <img id ="aoi" src="./assets/data-analysis.png" alt="Interest 2">
+                  <p>Data Analysis</p>
+                </div>
+                <div class="interest">
+                  <img id ="aoi" src="./assets/ai.png" alt="Interest 3">
+                  <p>Artificial Intelligence</p>
+                </div>
+                <div class="interest">
+                  <img id ="aoi" src="./assets/cloud-computing.png" alt="Interest 4">
+                  <p>Cloud Computing</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+    </section>
+    <section id="skills">
+      <div class="skills-container">
+        <p class="section__text__p1">Have a look at my</p>
+        <h1 class="title">Skills</h1>
+        <div class="skills-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <h2 class="skills-sub-title">Technical Skills</h2>
+              <div class="article-container">
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="skills icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Python</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="skills icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>HTML5</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="skills icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>CSS</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="skills icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>JavaScript</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="skills icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Data Structures</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="skills icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Django</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="details-container">
+              <h2 class="skills-sub-title">Soft Skills</h2>
+              <div class="article-container">
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="skills icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Communication</h3>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="skills icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Team Work</h3>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="skills icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Problem Solving</h3>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="skills icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Attention To Detail</h3>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="skills icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Creativity & Innovation</h3>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="skills icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Leadership</h3>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          src="./assets/skills.png"
+          alt="Skills icon"
+          class="skills-icon"  
+        >
+      </div>
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="skills-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="skills-sub-title project-title">Project Management & Allocation System</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://gitlab.com/ananthu_hari/pms/'"
+              >
+                CODE
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="skills-sub-title project-title">Face Mask Detection from Realtime Video</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/achyuth-anil/Mask_Detection'"
+              >
+                CODE
+              </button>
+            
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="skills-sub-title project-title">Maritime Survey Management System</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/ananthu-hari/custom/tree/main/surveymanager/'"
+              >
+                CODE
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <img
+            src="./assets/contact-pic.jpg"
+            alt="Contact Icon"
+            class="icon contact-icon contact-pic"
+      />
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:anilkumarachyuth3@gmail.com">Via Mail</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/achyuth-anil/">Via LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <div class="center-arrow">
+      <img
+        src="./assets/arrow-up.png"
+        alt="Arrow icon"
+        class="icon arrow-up"
+        onclick="location.href='#'"
+      />
+    </div>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Achyuth Anilkumar. All Rights Reserved.</p>
     </footer>
-    <!--Jquery js file-->
-    <script>
-      src = "./JS/jquery.3.5.1.js";
-    </script>
-
-    <!--Bootstrap js file-->
-    <script src="./JS/bootstrap.min.js"></script>
-
-    <!--  custom js file  -->
-    <script src="./js/main.js"></script>
+    <script src="JS/script.js"></script>
   </body>
 </html>
