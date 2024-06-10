@@ -48,9 +48,21 @@
 }
 
 @media screen and (max-width: 600px) {
+  #about {
+    height: fit-content;
+    margin-top: -5rem;
+  }
+  .interests {
+    display: flex;
+    flex-wrap: wrap;
+  }
   #contact,
   footer {
     height: 40vh;
+    margin-top: 10vh;
+  }
+  .center-arrow {
+    margin-top: 17vh;
   }
   #profile {
     height: 83vh;
@@ -68,8 +80,20 @@
   .btn-container {
     flex-wrap: wrap;
   }
+  .contact-info-upper-container {
+    flex-direction: column;
+  }
+  .contact-info-upper-container p {
+    display: none;
+  }
   .contact-info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     margin: 0;
+  }
+  .linkedin-icon {
+    margin-top: 1rem;
   }
   .contact-info-container p,
   .nav-links li a {
@@ -100,4 +124,5 @@
   .text-container {
     text-align: justify;
   }
+  
 }
