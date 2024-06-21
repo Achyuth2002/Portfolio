@@ -1,5 +1,5 @@
 
-var content = ["Frontend Developer", "Engineering Student"];
+var content = ["Software Developer", "Engineering Student"];
 var index = 0;
 var isDeleting = false;
 var txt = '';
