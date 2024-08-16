@@ -1,5 +1,5 @@
 
-var content = ["Computer Science Engineer", "Photographer"];
+var content = ["Engineering Graduate", "Aspiring Software Engineer"];
 var index = 0;
 var isDeleting = false;
 var txt = '';
